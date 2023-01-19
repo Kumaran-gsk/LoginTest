@@ -37,7 +37,7 @@ stages:
      steps:
           Settings
    - task: Maven@3
-        inputs:
+     inputs:
           mavenPomFile: 'pom.xml'
           goals: 'clean package'
           options: '--no-transfer-progress'
