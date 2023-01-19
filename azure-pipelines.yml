@@ -35,6 +35,7 @@ stages:
    - job: 'BuildArtifact'
      displayName: 'Building Artifact'
      steps:
+     - script: echo 'Running Spring demo app unit test' 
             Settings
       - task: Maven@3
         inputs:
