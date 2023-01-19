@@ -35,9 +35,10 @@ stages:
    - job: 'BuildArtifact'
      displayName: 'Building Artifact'
      steps:
+      - script: echo 'Running Spring demo app unit test' 
           Settings
-   - task: Maven@3
-     inputs:
+      - task: Maven@3
+        inputs:
           mavenPomFile: 'pom.xml'
           goals: 'clean package'
           options: '--no-transfer-progress'
