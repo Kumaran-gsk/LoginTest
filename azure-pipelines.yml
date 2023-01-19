@@ -32,7 +32,7 @@ stages:
 - stage: 'BuildArtifact'
   displayName: Building Artifact' 
   jobs:
-    -job: 'BuildArtifact'
+   - job: 'BuildArtifact'
      displayName: 'Building Artifact'
      steps:
        Settings
