@@ -7,14 +7,14 @@ pool:
   vmImage: ubuntu-latest
 
 stages: 
-  stage: 'Junit'
-   displayName: 'JunitStage'
-    jobs:
-                      - job: 'Junit Test'
-                              displayName: 'Running unit tests'
-                              steps:
-                                     -script: echo 'Running Spring demo app unit test' 
-                                          Settings
+  - stage: 'Junit'
+  displayName: 'JunitStage'
+  jobs:
+    - job: 'Junit Test'
+      displayName: 'Running unit tests'
+      steps:
+        -script: echo 'Running Spring demo app unit test' 
+                   Settings
                                              task: Maven@3 
                                                 inputs:
                                                     mavenPomFile: 'pom.xml' 
