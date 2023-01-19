@@ -8,13 +8,13 @@ pool:
 
 stages: 
   stage: 'Junit'
-   displayName: 'Junit Stage'
+   displayName: 'JunitStage'
     jobs:
                       - job: 'Junit Test'
                               displayName: 'Running unit tests'
                               steps:
                                      -script: echo 'Running Spring demo app unit test' 
-                                     Settings
+                                          Settings
                                              task: Maven@3 
                                                 inputs:
                                                     mavenPomFile: 'pom.xml' 
