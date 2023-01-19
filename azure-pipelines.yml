@@ -32,12 +32,12 @@ stages:
 - stage: 'BuildArtifact'
   displayName: Building Artifact' 
   jobs:
-    - job: 'BuildArtifact'
-      displayName: 'Building Artifact'
-      steps:
+   - job: 'BuildArtifact'
+     displayName: 'Building Artifact'
+     steps:
           Settings
-    - task: Maven@3
-      inputs:
+   - task: Maven@3
+        inputs:
           mavenPomFile: 'pom.xml'
           goals: 'clean package'
           options: '--no-transfer-progress'
