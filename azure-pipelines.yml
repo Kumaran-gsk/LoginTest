@@ -8,9 +8,9 @@ pool:
 
 stages: 
 - stage: 'Junit'
-  displayName: 'Junit Stage'
+  displayName: 'JunitStage'
   jobs:
-    - job: 'Junit Test'
+    - job: 'JunitTest'
       displayName: 'Running unit tests'
       steps:
         - script: echo 'Running Spring demo app unit test' 
