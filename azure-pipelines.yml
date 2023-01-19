@@ -8,7 +8,7 @@ pool:
 
 stages: 
   - stage: 'Junit'
-  displayName: 'JunitStage'
+  displayName: 'Junit Stage'
   jobs:
     - job: 'Junit Test'
       displayName: 'Running unit tests'
